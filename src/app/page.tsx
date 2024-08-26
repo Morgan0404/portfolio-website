@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Timeline from '../components/Timeline'; // Adjust the path as needed
+import ContactDetails from "@/components/ContactDetails";
 
 
 export default function Home() {
