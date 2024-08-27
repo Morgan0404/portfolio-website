@@ -6,7 +6,6 @@ function MyProjects() {
 
         <h1>
             <Navbar />
-            hello
         </h1>
     );
 }
