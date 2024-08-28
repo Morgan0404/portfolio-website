@@ -3,7 +3,8 @@
 import React from "react";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
-import Timeline from '../components/Timeline'; // Adjust the path as needed
+import Timeline from '../components/Timeline';
+import Image from "next/image"; // Adjust the path as needed
 
 export default function Home() {
     return (
@@ -27,7 +28,7 @@ export default function Home() {
                             rel="noopener noreferrer"
                             className="bg-white p-2 rounded-md flex items-center justify-center"
                         >
-                            <img
+                            <Image
                                 src="/githublogo.png"
                                 alt="Visit My GitHub"
                                 className="h-7 w-20" // Adjust height as needed
