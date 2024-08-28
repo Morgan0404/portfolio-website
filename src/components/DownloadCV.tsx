@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const DownloadCV = () => {
   // Define the button style
@@ -20,7 +21,7 @@ const DownloadCV = () => {
   return (
     <a href={cvPath} download="Morgan_James_CV.pdf" style={style}>
       {/* Image instead of text */}
-      <img
+      <Image
         src="/cv.png" // Assuming the image is in the public folder
         alt="Visit My GitHub"
         style={{

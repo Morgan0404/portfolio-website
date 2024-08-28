@@ -57,7 +57,7 @@ export default function Home() {
                             rel="noopener noreferrer"
                             className="bg-white p-2 rounded-md flex items-center justify-center"
                         >
-                            <img
+                            <Image
                                 src="/linkedin.png"
                                 alt="Visit My LinkedIn"
                                 className="h-5 w-auto" // Adjust height as needed
@@ -69,13 +69,13 @@ export default function Home() {
                     <div className="text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
                         <h1 className="text-2xl mb-3 font-bold text-gray-900 dark:text-gray-100">Welcome to my Portfolio</h1>
                         <p className="mb-3 text-gray-500 dark:text-gray-400">
-                            Hello! My name is Morgan James, I'm currently a third-year Computer Science student at the University of Exeter, a Russell Group university known for its strong emphasis on research and academic excellence. My passion lies in software development, where I enjoy the challenge of building full-stack applications that solve real-world problems.
+                            Hello! My name is Morgan James, I am currently a third-year Computer Science student at the University of Exeter, a Russell Group university known for its strong emphasis on research and academic excellence. My passion lies in software development, where I enjoy the challenge of building full-stack applications that solve real-world problems.
                         </p>
                         <p className="mb-3 text-gray-500 dark:text-gray-400">
-                            This website serves as a platform to showcase the skills and knowledge I have gained throughout my studies and personal projects. It highlights my ability to design, develop, and deploy applications from end to end. Whether it's frontend development, backend engineering, or everything in between, I'm constantly exploring new technologies and refining my expertise.
+                            This website serves as a platform to showcase the skills and knowledge I have gained throughout my studies and personal projects. It highlights my ability to design, develop, and deploy applications from end to end. Whether it is frontend development, backend engineering, or everything in between, I am constantly exploring new technologies and refining my expertise.
                         </p>
                         <p className="mb-3 text-gray-500 dark:text-gray-400">
-                            The creation of this website is not just a portfolio—it's a demonstration of my commitment to the field and a step towards my professional future. I'm using it to present my work to potential employers, particularly for internships that will allow me to grow further as a developer. Through these opportunities, I aim to contribute my skills while continuing to learn from industry professionals.
+                            The creation of this website is not just a portfolio — it is a demonstration of my commitment to the field and a step towards my professional future. I am using it to present my work to potential employers, particularly for internships that will allow me to grow further as a developer. Through these opportunities, I aim to contribute my skills while continuing to learn from industry professionals.
                         </p>
                         <p className="mb-3 text-gray-500 dark:text-gray-400">
                             Thank you for visiting my site, and I hope it gives you a clear picture of my capabilities and enthusiasm for software development!
