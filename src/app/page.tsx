@@ -13,7 +13,7 @@ export default function Home() {
             <Navbar />
 
             {/* Main content starts below the Navbar */}
-            <main className="flex min-h-screen flex-col items-center justify-between p-24 pt-20">
+            <main className="flex min-h-screen flex-col items-center justify-between p-24 pt-20 ">
                 <div className="flex flex-col items-center gap-4">
                     <h1 className="mb-4 text-lg font-extrabold text-gray-900 dark:text-white md:text-4xl md:text-5xl text-center">
                         <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-green-400 animate-moving-gradient bg-[length:200%]">
@@ -31,6 +31,8 @@ export default function Home() {
                             <Image
                                 src="/githublogo.png"
                                 alt="Visit My GitHub"
+                                width="80"
+                                height = "7"
                                 className="h-7 w-20" // Adjust height as needed
                             />
                         </a>
@@ -60,7 +62,8 @@ export default function Home() {
                             <Image
                                 src="/linkedin.png"
                                 alt="Visit My LinkedIn"
-                                className="h-5 w-auto" // Adjust height as needed
+                                width="80"
+                                height="5"
                             />
                         </a>
 
