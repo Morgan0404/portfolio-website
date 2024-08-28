@@ -16,7 +16,7 @@ export default function Home() {
             <main className="flex min-h-screen flex-col items-center justify-between p-24 pt-20 ">
                 <div className="flex flex-col items-center gap-4">
                     <h1 className="mb-4 text-lg font-extrabold text-gray-900 dark:text-white md:text-4xl md:text-5xl text-center">
-                        <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-green-400 animate-moving-gradient bg-[length:200%]">
+                        <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-600 to-blue-400 animate-moving-gradient bg-[length:200%]">
                             Excited to Grow,
                         </span>
                         <span className="block">Eager to Make a Difference</span>
@@ -83,6 +83,16 @@ export default function Home() {
                         <p className="mb-3 text-gray-500 dark:text-gray-400">
                             Thank you for visiting my site, and I hope it gives you a clear picture of my capabilities and enthusiasm for software development!
                         </p>
+                        <div className="flex justify-center mt-6">
+                            <Link href="/projects">
+                                <button
+                                    type="button"
+                                    className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                >
+                                    Check out my work
+                                </button>
+                            </Link>
+                        </div>
                     </div>
 
                 </div>
