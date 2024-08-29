@@ -1,6 +1,14 @@
 import React from "react";
 
-export default function Panel({ imageSrc, imageAlt, heading, text, reverse }) {
+type PanelProps = {
+    imageSrc: string;
+    imageAlt: string;
+    heading: string;
+    text: string | JSX.Element;
+    reverse: boolean;
+};
+
+export default function Panel({ imageSrc, imageAlt, heading, text, reverse }: PanelProps) {
     return (
         <div className={`flex ${reverse ? "flex-row-reverse" : "flex-row"} items-center gap-4`}>
             <div className="w-1/2">
