@@ -1,14 +1,18 @@
 import React from "react";
-import Image from "next/image";
 
-export default function Panel({ imageSrc, imageAlt, text, reverse }) {
+export default function Panel({ imageSrc, imageAlt, heading, text, reverse }) {
     return (
-        <div className={`flex flex-col md:flex-row ${reverse ? 'md:flex-row-reverse' : ''} items-center gap-8 mb-8`}>
-            <div className="w-full md:w-1/2 flex justify-center">
-                <Image src={imageSrc} alt={imageAlt} width={400} height={300} className="rounded-lg shadow-md" />
+        <div className={`flex ${reverse ? "flex-row-reverse" : "flex-row"} items-center gap-4`}>
+            <div className="w-1/2">
+                <img src={imageSrc} alt={imageAlt} className="w-full h-auto rounded-lg" />
             </div>
-            <div className="w-full md:w-1/2">
-                <p className="text-lg leading-relaxed">{text}</p>
+            <div className="w-1/2">
+                <h2 className="text-2xl font-bold mb-4">{heading}</h2>
+                {typeof text === "string" ? (
+                    <p className="text-sm text-gray-700">{text}</p>
+                ) : (
+                    <div className="text-sm text-gray-700">{text}</div>
+                )}
             </div>
         </div>
     );
