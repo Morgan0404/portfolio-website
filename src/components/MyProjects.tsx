@@ -21,8 +21,7 @@ export default function MyProjects() {
                                 </p>
                                 <br/>
                                 <p>
-                                    Initially utilising a RESTful API to fetch a variety of recipes, we stored this data in a JSON file for efficient filtering. Recognising the need for an additional dynamic database containing current user ingredients, measurements, and accurate pricing, we implemented a solution using SQLite3 in Python. This helped us store an accurate up to date pricing for food that could be later used for "money saved" and “cheapest option” features.                                    Initially utilising a RESTful API to fetch a variety of recipes, we stored this data in a JSON file for efficient filtering. Recognising the need for an additional dynamic database containing current user ingredients, measurements, and accurate pricing, we implemented a solution using SQLite3 in Python. This helped us store an accurate up to date pricing for food that could be later used for "money saved" and “cheapest option” features.
-
+                                    Initially utilising a RESTful API to fetch a variety of recipes, we stored this data in a JSON file for efficient filtering. Recognising the need for an additional dynamic database containing current user ingredients, measurements, and accurate pricing, we implemented a solution using SQLite3 in Python. This helped us store an accurate up to date pricing for food that could be later used for money saved and cheapest option features.
                                 </p>
                                 <br/>
                                 <p>
