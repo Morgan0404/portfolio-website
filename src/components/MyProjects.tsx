@@ -6,9 +6,13 @@ export default function MyProjects() {
     return (
         <div>
             <Navbar />
+
             <main className="flex min-h-screen flex-col items-center justify-between p-24 pt-20">
                 <div className="flex flex-col items-center gap-4">
                     <h1 className="text-4xl font-bold text-center mt-8">My Projects</h1>
+
+
+                    <div className="text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
 
                     <Panel
                         imageSrc="/githublogo.png" // Replace with your image path
@@ -31,6 +35,9 @@ export default function MyProjects() {
                         }
                         reverse={false}
                     />
+                    </div>
+
+                    <div className="text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
                     <Panel
                         imageSrc="/githublogo.png" // Replace with your image path
                         imageAlt="Project Image 2"
@@ -48,6 +55,8 @@ export default function MyProjects() {
                         }
                         reverse={true}
                     />
+                    </div>
+                    <div className="text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
                     <Panel
                         imageSrc="/githublogo.png" // Replace with your image path
                         imageAlt="Project Image 3"
@@ -68,8 +77,30 @@ export default function MyProjects() {
                         }
                         reverse={false}
                     />
+                        </div>
+                    <div className="text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
+                        <Panel
+                            imageSrc="/githublogo.png" // Replace with your image path
+                            imageAlt="Project Image 2"
+                            heading="Grad Gig: Full stack web application"
+                            text={
+                                <>
+                                    <p>
+                                        I successfully developed and deployed a full-stack job board application utilising the latest Next.js framework, incorporating server components, and integrating a MongoDB database. This project serves as a comprehensive demonstration of my full-stack development capabilities, from front-end design to back-end implementation and database management. The application includes key features such as user authentication, company creation, job posting with image uploads to S3, and CRUD operations for job listings.
+                                    </p>
+                                    <br/>
+                                    <p>
+                                        For authentication, I integrated WorkOS, enabling seamless and secure user login and management. The project was built with a focus on providing a seamless user experience and leveraging modern web technologies. I covered all essential aspects from the homepage setup to handling job data within the MongoDB database. This project showcases my ability to build robust, scalable web applications, with the entire application deployed on Vercel.
+                                    </p>
+                                </>
+                            }
+                            reverse={true}
+                        />
+                    </div>
                 </div>
             </main>
         </div>
+
+
     );
 }
