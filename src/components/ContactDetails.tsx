@@ -6,14 +6,12 @@ import Image from "next/image";
 function ContactDetails() {
 
     return (
-        <div className="container my-12 mx-auto px-2 md:px-4">
+        <div className="mb-60 my-12 mx-auto px-2 md:px-4">
             <Navbar />
-
-            <section className="mb-32">
-
-                <div className="flex justify-center">
-                    <div className="text-center md:max-w-xl lg:max-w-3xl">
-                        <h2 className="mb-12 px-6 text-3xl font-bold">
+            <section className="mb-20 pt-9">
+                <div className=" flex justify-center">
+                    <div className="text-center mb-10 md:max-w-xl lg:max-w-3xl">
+                        <h2 className="mb-1 px-6 text-3xl font-bold">
                             Contact Me
                         </h2>
                     </div>
@@ -21,10 +19,10 @@ function ContactDetails() {
 
                 <div className="flex flex-wrap">
 
-                    <form className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+                    <form className="mb-1  w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
 
-                        <div className="mb-3 w-full">
-                            <label className="block font-medium mb-[2px] text-teal-700" htmlFor="exampleInput90">
+                        <div className="mb-3 pt-3 w-full">
+                            <label className="block font-medium mb-[2px] text-blue-700" htmlFor="exampleInput90">
                                 Name
                             </label>
                             <input type="text" className="px-2 py-2 border w-full outline-none rounded-md"
@@ -32,7 +30,7 @@ function ContactDetails() {
                         </div>
 
                         <div className="mb-3 w-full">
-                            <label className="block font-medium mb-[2px] text-teal-700" htmlFor="exampleInput90">
+                            <label className="block font-medium mb-[2px] text-blue-700" htmlFor="exampleInput90">
                                 Email
                             </label>
                             <input type="email" className="px-2 py-2 border w-full outline-none rounded-md"
@@ -41,7 +39,7 @@ function ContactDetails() {
                         </div>
 
                         <div className="mb-3 w-full">
-                            <label className="block font-medium mb-[2px] text-teal-700" htmlFor="exampleInput90">
+                            <label className="block font-medium mb-[2px] text-blue-700" htmlFor="exampleInput90">
                                 Message
                             </label>
                             <textarea className="px-2 py-2 border rounded-[5px] w-full outline-none" name=""
@@ -49,18 +47,21 @@ function ContactDetails() {
                         </div>
 
                         <button type="button"
-                                className="mb-6 inline-block w-full rounded bg-blue-600 px-6 py-2.5 font-medium uppercase leading-normal text-white hover:shadow-md hover:bg-teal-500">
+                                className="mb-6 inline-block w-full rounded bg-blue-600 px-6 py-2.5 font-medium uppercase leading-normal text-white hover:shadow-md hover:bg-blue
+-500">
                             Send
                         </button>
 
                     </form>
 
-                    <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+                    <div className="w-full  pt-10  px-20 shrink-0 grow-0 basis-auto lg:w-7/12">
                         <div className="flex flex-wrap">
                             <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                                 <div className="flex items-start">
                                     <div className="shrink-0">
-                                        <div className="inline-block rounded-md bg-teal-400-100 p-4 text-teal-700">
+                                        <div className="inline-block rounded-md bg-blue
+-400-100 p-4 text-blue
+-700">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                                  strokeWidth="2" stroke="currentColor" className="h-6 w-6">
                                                 <path strokeLinecap="round" strokeLinejoin="round"
@@ -84,7 +85,9 @@ function ContactDetails() {
                             <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                                 <div className="flex items-start">
                                     <div className="shrink-0">
-                                        <div className="inline-block rounded-md bg-teal-400-100 p-4 text-teal-700">
+                                        <div className="inline-block rounded-md bg-blue
+-400-100 p-4 text-blue
+-700">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                                  strokeWidth="2" stroke="currentColor" className="h-6 w-6">
                                                 <path strokeLinecap="round" strokeLinejoin="round"
@@ -108,7 +111,9 @@ function ContactDetails() {
                             <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                                 <div className="align-start flex">
                                     <div className="shrink-0">
-                                        <div className="inline-block rounded-md bg-teal-400-100 p-4 text-teal-700">
+                                        <div className="inline-block rounded-md bg-blue
+-400-100 p-4 text-blue
+-700">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                                  strokeWidth="2" stroke="currentColor" className="h-6 w-6">
                                                 <path strokeLinecap="round" strokeLinejoin="round"
@@ -130,7 +135,9 @@ function ContactDetails() {
                             <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                                 <div className="align-start flex">
                                     <div className="shrink-0">
-                                        <div className="inline-block rounded-md bg-teal-400-100 p-4 text-teal-700">
+                                        <div className="inline-block rounded-md bg-blue
+-400-100 p-4 text-blue
+-700">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                                  strokeWidth="2" stroke="currentColor" className="h-6 w-6">
                                                 <path strokeLinecap="round" strokeLinejoin="round"

@@ -15,7 +15,7 @@ export default function Panel({ imageSrc, imageAlt, heading, text, reverse }: Pa
                 <img src={imageSrc} alt={imageAlt} className="w-full h-auto rounded-lg" />
             </div>
             <div className="w-1/2">
-                <h2 className="text-2xl font-bold mb-4">{heading}</h2>
+                <h2 className="text-2xl font-bold text-blue-600 mb-4">{heading}</h2>
                 {typeof text === "string" ? (
                     <p className="text-sm text-gray-700">{text}</p>
                 ) : (

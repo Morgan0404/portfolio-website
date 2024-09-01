@@ -8,7 +8,7 @@ const Timeline = () => {
 
             <li className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                <time className="mb-10 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                     September 2021 - September 2022
                 </time>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -21,8 +21,22 @@ const Timeline = () => {
 
             <li className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time className="mb-10 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    September 2022 - Graduating May 2025
+                </time>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                    Enrollment at Exeter University (BSc Computer Science )
+                </h3>
+                <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+                    I am currently pursuing my degree in Computer Science at the University of Exeter, where I am developing practical skills in the specification, design, and implementation of computer systems. My education is deeply rooted in both theoretical foundations and cutting-edge research, particularly in areas like machine learning, artificial intelligence, and nature-inspired computation.
+
+                    The program is designed to reflect the entire Computer Science development cycle—from theory and design to development, testing, and application—ensuring a comprehensive and relevant learning experience.                </p>
+            </li>
+
+            <li className="mb-10 ms-4">
+                <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                    April 2022 - Present
+                    April 2023 - Present
                 </time>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                     Excode - Python workshop leader (Exeter University)
@@ -34,7 +48,7 @@ const Timeline = () => {
             <li className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                    September 2023 - Present
+                    January 2024 - Present
                 </time>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                     Google Student Developer Club - member
@@ -64,6 +78,7 @@ const Timeline = () => {
                     </svg>
                 </a>
             </li>
+
 
         </ol>
         </div>

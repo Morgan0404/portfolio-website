@@ -9,7 +9,23 @@ export default function MyProjects() {
 
             <main className="flex min-h-screen flex-col items-center justify-between p-24 pt-20">
                 <div className="flex flex-col items-center gap-4">
-                    <h1 className="text-4xl font-bold text-center mt-8">My Projects</h1>
+                    <h1 className="text-4xl font-bold text-center mt-8">My Top 5 Projects</h1>
+                    <div className="text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
+                        <Panel
+                            imageSrc="/githublogo.png" // Replace with your image path
+                            imageAlt="Project Image 2"
+                            heading="1. Brain Tumour Detection Using machine learning | Dissertation Piece
+"
+                            text={
+                                <>
+                                    <p>
+                                        I am currently working on my dissertation, which focuses on brain tumor detection using machine learning. This project involves applying advanced machine learning techniques to analyse medical imaging data, with the goal of improving the accuracy and efficiency of tumor detection. My research aims to contribute to the ongoing advancements in medical diagnostics by leveraging the power of AI to assist healthcare professionals in making more informed decisions. This work not only deepens my understanding of machine learning but also allows me to contribute to a field that has significant real-world impact.                                    </p>
+
+                                </>
+                            }
+                            reverse={true}
+                        />
+                    </div>
 
 
                     <div className="text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
@@ -17,7 +33,7 @@ export default function MyProjects() {
                     <Panel
                         imageSrc="/githublogo.png" // Replace with your image path
                         imageAlt="Left-Over Chef"
-                        heading="GOOGLE DEVFEST PROJECT: LEFTOVER CHEF"
+                        heading="2. Leftover Chef | Google devfest hackathon submission"
                         text={
                             <>
                                 <p>
@@ -41,7 +57,7 @@ export default function MyProjects() {
                     <Panel
                         imageSrc="/githublogo.png" // Replace with your image path
                         imageAlt="Project Image 2"
-                        heading="Grad Gig: Full stack web application"
+                        heading="3. Grad Gig | Full stack web application"
                         text={
                             <>
                                 <p>
@@ -60,7 +76,7 @@ export default function MyProjects() {
                     <Panel
                         imageSrc="/githublogo.png" // Replace with your image path
                         imageAlt="Project Image 3"
-                        heading="Sustain-A-Meal"
+                        heading="4. Sustain-A-Meal | Full stack Group software Development Project"
                         text={
                             <>
                             <p>
@@ -82,21 +98,19 @@ export default function MyProjects() {
                         <Panel
                             imageSrc="/githublogo.png" // Replace with your image path
                             imageAlt="Project Image 2"
-                            heading="Grad Gig: Full stack web application"
+                            heading="5. Web-Dev Card Game | Linuz, Apache, PHP, HTML/CSS, Java
+"
                             text={
                                 <>
                                     <p>
-                                        I successfully developed and deployed a full-stack job board application utilising the latest Next.js framework, incorporating server components, and integrating a MongoDB database. This project serves as a comprehensive demonstration of my full-stack development capabilities, from front-end design to back-end implementation and database management. The application includes key features such as user authentication, company creation, job posting with image uploads to S3, and CRUD operations for job listings.
-                                    </p>
-                                    <br/>
-                                    <p>
-                                        For authentication, I integrated WorkOS, enabling seamless and secure user login and management. The project was built with a focus on providing a seamless user experience and leveraging modern web technologies. I covered all essential aspects from the homepage setup to handling job data within the MongoDB database. This project showcases my ability to build robust, scalable web applications, with the entire application deployed on Vercel.
-                                    </p>
+                                        I developed a web-based card matching game utilizing the LAMP stack (Linux, Apache, MySQL, PHP), hosted on an Apache server on Azure. The game featured a dynamic leaderboard, where user scores were logged and tracked using sessions and cookies, allowing for a personalized and competitive gaming experience. The project involved both front-end and back-end development, requiring a strong understanding of web technologies, session management, and server deployment. This project was part of my web development coursework, showcasing my ability to build and deploy robust server-side applications.                                    </p>
+
                                 </>
                             }
                             reverse={true}
                         />
                     </div>
+
                 </div>
             </main>
         </div>
