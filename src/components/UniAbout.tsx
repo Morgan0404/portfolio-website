@@ -13,7 +13,7 @@ export default function UniAbout() {
                     <CoursePanel
                         heading="First Year"
                         courses={[
-                            { title: "Introduction to Programming v", details: ["Basic syntax", "Control structures", "Functions and modules"] },
+                            { title: "Introduction to Programming", details: ["Basic syntax", "Control structures", "Functions and modules"] },
                             { title: "Data Structures and Algorithms", details: ["Arrays and Lists", "Trees and Graphs", "Sorting algorithms"] },
                             { title: "Discrete Maths For Computer Science", details: ["Discrete mathematics", "Linear algebra", "Probability"] },
                             { title: "Computational Maths", details: ["Discrete mathematics", "Linear algebra", "Probability"] },
