@@ -13,8 +13,8 @@ type PanelProps = {
 };
 
 export default function CoursePanel({ heading, courses }: PanelProps) {
-    // Initialize openCourses with the first course set to true
-    const [openCourses, setOpenCourses] = useState<boolean[]>(courses.map((_, index) => index === 0));
+    // Initialize openCourses with all courses set to false (untoggled by default)
+    const [openCourses, setOpenCourses] = useState<boolean[]>(courses.map(() => false));
 
     const toggleCourse = (index: number) => {
         setOpenCourses(prevState => {
@@ -26,7 +26,7 @@ export default function CoursePanel({ heading, courses }: PanelProps) {
 
     return (
         <div className="w-full max-w-4xl p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
-            <h2 className="text-2xl font-bold text-blue-600 mb-4">{heading}</h2>
+            <h2 className="text-2xl text-blue-600 mb-4">{heading}</h2>
             {courses.map((course, index) => (
                 <div key={index} className="mb-6">
                     <button
