@@ -1,8 +1,9 @@
+
 import React from 'react';
 
 const Timeline = () => {
     return (
-        <div className="text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
+        <div className="fade-in text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
 
         <ol className=" relative border-l-4 border-blue-600 dark:border-blue-700">
 

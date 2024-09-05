@@ -8,7 +8,7 @@ function ContactDetails() {
     return (
         <div className="mb-60 my-12 mx-auto px-2 md:px-4">
             <Navbar />
-            <section className="mb-20 pt-9">
+            <section className="fade-in mb-20 pt-9">
                 <div className=" flex justify-center">
                     <div className="text-center mb-10 md:max-w-xl lg:max-w-3xl">
                         <h2 className="mb-1 px-6 text-3xl font-bold">

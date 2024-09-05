@@ -13,7 +13,7 @@ export default function ContactPage() {
             <main className="flex min-h-screen flex-col items-center justify-between p-24 pt-20">
                 <div className="flex flex-col items-center gap-4">
                     <div>
-                        <h1 className="text-4xl font-bold text-center mt-8">My Timeline</h1>
+                        <h1 className="fade-in text-4xl font-bold text-center mt-8">My Timeline</h1>
                         <Timeline />
                     </div>
                 </div>

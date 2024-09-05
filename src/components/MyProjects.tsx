@@ -7,7 +7,7 @@ export default function MyProjects() {
         <div>
             <Navbar />
 
-            <main className="flex min-h-screen flex-col items-center justify-between p-24 pt-20">
+            <main className=" fade-in flex min-h-screen flex-col items-center justify-between p-24 pt-20">
                 <div className="flex flex-col items-center gap-4">
                     <h1 className="text-4xl font-bold text-center mt-8">My Top 5 Projects</h1>
                     <div className="text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
