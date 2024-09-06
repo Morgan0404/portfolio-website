@@ -3,9 +3,21 @@ import React from 'react';
 
 const Timeline = () => {
     return (
-        <div className="fade-in text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
+        <div className=" fade-in text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
 
         <ol className=" relative border-l-4 border-blue-600 dark:border-blue-700">
+
+            <li className="mb-10 ms-4">
+                <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time className="mb-10 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    September 2020 - September 2022
+                </time>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                    Enrollment at Barton Peveril Sixth form college (A-levels)
+                </h3>
+                <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+                    I attended Barton Peveril College, where I achieved BBB in Computer Science, Maths, and Media Studies. These subjects provided me with a strong analytical and problem-solving foundation, particularly through my studies in Computer Science and Maths, while Media Studies enhanced my creativity and communication skills.                </p>
+            </li>
 
             <li className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
@@ -20,7 +32,7 @@ const Timeline = () => {
                 </p>
             </li>
 
-            <li className="mb-10 ms-4">
+            <li className=" mb-10 ms-4 ">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <time className="mb-10 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                     September 2022 - Graduating May 2025
