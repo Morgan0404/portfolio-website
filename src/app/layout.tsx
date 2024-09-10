@@ -17,9 +17,8 @@ export default function RootLayout({
     return (
         <html lang="en">
         <head>
-            {/* Use .ico or .png for better browser compatibility */}
-            <link rel="icon" href="/web-icon.png" type="image/png" />
             <title>Morgans Portfolio</title>
+            <link rel="icon" href="/favicon.ico" />
         </head>
         <body className={inter.className}>{children}</body>
         </html>
