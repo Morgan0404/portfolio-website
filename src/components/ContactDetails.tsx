@@ -77,7 +77,7 @@ function ContactDetails() {
                                             morganjames092@gmail.com
                                         </p>
                                         <p className="text-neutral-500 ">
-                                            07710466903
+                                            tel: 07710466903
                                         </p>
                                     </div>
                                 </div>
@@ -103,7 +103,7 @@ function ContactDetails() {
                                             morganjames202004@gmail.com
                                         </p>
                                         <p className="text-neutral-500 ">
-                                            07710466903
+                                            tel: 07710466903
                                         </p>
                                     </div>
                                 </div>
