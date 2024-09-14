@@ -17,10 +17,10 @@ export default function Home() {
             <Navbar />
             <main className="flex min-h-screen flex-col items-center justify-between p-24 pt-20">
                 <div className="flex flex-col items-center gap-4">
-                    <h1 className="fade-in mb-4 text-lg font-extrabold text-gray-900 dark:text-white md:text-4xl md:text-5xl text-center">
-                        <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-600 to-blue-400 animate-moving-gradient bg-[length:200%]">
-                            Excited to Grow,
-                        </span>
+                    <h1 className="fade-in mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 dark:text-white text-center">
+    <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-600 to-blue-400 animate-moving-gradient bg-[length:200%]">
+        Excited to Grow,
+    </span>
                         <span className="block">Eager to Make a Difference</span>
                     </h1>
 
