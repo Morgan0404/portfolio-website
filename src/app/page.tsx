@@ -1,11 +1,17 @@
-"use client";
+'use client';
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
+    // States to track loading of images
+    const [githubLoading, setGithubLoading] = useState(true);
+    const [linkedinLoading, setLinkedinLoading] = useState(true);
+
     return (
         <>
             <Navbar />
@@ -19,39 +25,57 @@ export default function Home() {
                     </h1>
 
                     <div className="fade-in flex gap-4 justify-center">
+                        {/* GitHub Icon */}
                         <a
                             href="https://github.com/Morgan0404"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="fade-in bg-white p-2 rounded-md flex items-center justify-center"
+                            style={{ width: '100px', height: '41px' }}  // Fixed size matching image
                         >
+                            {githubLoading && (
+                                <FontAwesomeIcon icon={faSpinner} className="text-gray-400 animate-spin h-4 w-4" />
+                            )}
                             <Image
                                 src="/githublogo.png"
                                 alt="Visit My GitHub"
                                 width="80"
                                 height="7"
-                                className="h-7 w-20"
+                                className={`h-7 w-20 ${githubLoading ? 'hidden' : ''}`}  // Hide image until loaded
+                                onLoadingComplete={() => setGithubLoading(false)}  // Ensure spinner stops after image load
+                                priority={true}  // Prioritize this image for faster loading
                             />
                         </a>
+
+                        {/* CV Button */}
                         <a href={"/MorganJamesCVnewfinal.pdf"} download="MorganJamesCVnewfinal.pdf">
                             <button
                                 type="button"
-                                className="fade-in inline-flex items-center gap-1.5 rounded-lg border border-primary-500 bg-white px-5 py-2.5 text-center text-sm font-bold text-black shadow-sm transition-all hover:border-primary-700 hover:bg-primary-700 focus:ring focus:ring-primary-200 disabled:cursor-not-allowed disabled:border-primary-300 disabled:bg-primary-300"
+                                className="fade-in w-30 h-19.5 inline-flex items-center gap-1.5 rounded-lg border border-primary-500 bg-white px-8 py-2.5 text-center text-sm font-bold text-black shadow-sm transition-all hover:border-primary-700 hover:bg-primary-700 focus:ring focus:ring-primary-200 disabled:cursor-not-allowed disabled:border-primary-300 disabled:bg-primary-300"
                             >
                                 My CV
                             </button>
                         </a>
+
+                        {/* LinkedIn Icon */}
                         <a
                             href="https://www.linkedin.com/in/morgan-james-09092b295/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="fade-in bg-white p-2 rounded-md flex items-center justify-center"
+                            style={{ width: '100px', height: '41px' }}  // Fixed size matching image
                         >
+                            {linkedinLoading && (
+                                <FontAwesomeIcon icon={faSpinner} className="text-gray-400 animate-spin h-4 w-4" />
+                            )}
                             <Image
                                 src="/linkedin.png"
                                 alt="Visit My LinkedIn"
                                 width="80"
                                 height="5"
+                                className={`h-5 w-15 ${linkedinLoading ? 'hidden' : ''}`}  // Hide image until loaded
+                                onLoadingComplete={() => setLinkedinLoading(false)}  // Ensure spinner stops after image load
+                                priority={true}  // Prioritize this image for faster loading
                             />
                         </a>
                     </div>
