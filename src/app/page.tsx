@@ -30,7 +30,7 @@ export default function Home() {
                             href="https://github.com/Morgan0404"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="fade-in bg-white p-2 rounded-md flex items-center justify-center"
+                            className="fade-in bg-white  rounded-md flex items-center justify-center"
                             style={{ width: '100px', height: '41px' }}  // Fixed size matching image
                         >
                             {githubLoading && (
@@ -51,10 +51,10 @@ export default function Home() {
                         <a href={"/MorganJamesCVnewfinal.pdf"} download="MorganJamesCVnewfinal.pdf">
                             <button
 
-                                style={{ width: '138px', height: '42px' }}
+                                style={{ width: '110px', height: '42px' }}
 
                                 type="button"
-                                className="fade-in w-30 h-19.5 inline-flex items-center gap-1.5 rounded-lg border border-primary-500 bg-white px-8 py-2.5 text-center text-sm font-bold text-black shadow-sm transition-all hover:border-primary-700 hover:bg-primary-700 focus:ring focus:ring-primary-200 disabled:cursor-not-allowed disabled:border-primary-300 disabled:bg-primary-300"
+                                className="fade-in w-30 h-19.5 inline-flex items-center gap-1.5 rounded-lg border border-primary-500 bg-white px-4 py-2.5 text-center text-sm font-bold text-black shadow-sm transition-all hover:border-primary-700 hover:bg-primary-700 focus:ring focus:ring-primary-200 disabled:cursor-not-allowed disabled:border-primary-300 disabled:bg-primary-300"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
