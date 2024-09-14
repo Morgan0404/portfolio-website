@@ -118,7 +118,6 @@ function ContactDetails() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-white p-2 rounded-md flex items-center justify-center"
-                                style={{ width: '100px', height: '41px' }}  // Fixed size matching image
 
                             >
                                 <Image
@@ -151,7 +150,6 @@ function ContactDetails() {
                                 </button>
                             </a>
                             <a
-                                style={{ width: '100px', height: '41px' }}  // Fixed size matching image
 
                                 href="https://www.linkedin.com/in/morgan-james-09092b295/"
                                 target="_blank"
