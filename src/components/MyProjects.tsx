@@ -7,114 +7,112 @@ export default function MyProjects() {
         <div>
             <Navbar />
 
-            <main className=" fade-in flex min-h-screen flex-col items-center justify-between p-24 pt-20">
+            <main className="fade-in flex min-h-screen flex-col items-center justify-between px-4 md:px-24 pt-10 md:pt-20">
                 <div className="flex flex-col items-center gap-4">
-                    <h1 className="text-4xl font-bold text-center mt-8">My Top 5 Projects</h1>
-                    <div className="text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
+                    <h1 className="text-2xl md:text-4xl font-bold text-center mt-8">My Top 5 Projects</h1>
+
+                    {/* Project 1 */}
+                    <div className="text-left mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
                         <Panel
                             imageSrc="/mri.png" // Replace with your image path
                             imageAlt="Project Image 2"
-                            heading="1. Brain Tumour Detection Using machine learning | Dissertation Piece
-"
+                            heading="1. Brain Tumour Detection Using Machine Learning | Dissertation Piece"
                             text={
                                 <>
                                     <p>
-                                        I am currently working on my dissertation, which focuses on brain tumor detection using machine learning. This project involves applying advanced machine learning techniques to analyse medical imaging data, with the goal of improving the accuracy and efficiency of tumor detection. My research aims to contribute to the ongoing advancements in medical diagnostics by leveraging the power of AI to assist healthcare professionals in making more informed decisions. This work not only deepens my understanding of machine learning but also allows me to contribute to a field that has significant real-world impact.                                    </p>
-
+                                        I am currently working on my dissertation, which focuses on brain tumor detection using machine learning. This project involves applying advanced machine learning techniques to analyse medical imaging data, with the goal of improving the accuracy and efficiency of tumor detection. My research aims to contribute to the ongoing advancements in medical diagnostics by leveraging the power of AI to assist healthcare professionals in making more informed decisions.
+                                    </p>
                                 </>
                             }
                             reverse={true}
                         />
                     </div>
 
-
-                    <div className="text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
-
-                    <Panel
-                        imageSrc="/E10A4721.JPG" // Replace with your image path
-                        imageAlt="Left-Over Chef"
-                        heading="2. Leftover Chef | Google devfest hackathon submission"
-                        text={
-                            <>
-                                <p>
-                                    Secured third place at Google Dev Fest, LeftOver Chef was conceived and developed within a week to address sustainability challenges. Focused on reducing food waste, our solution provided a platform where students could input leftovers, receiving generated recipes to minimise ingredient wastage.
-                                </p>
-                                <br/>
-                                <p>
-                                    Initially utilising a RESTful API to fetch a variety of recipes, we stored this data in a JSON file for efficient filtering. Recognising the need for an additional dynamic database containing current user ingredients, measurements, and accurate pricing, we implemented a solution using SQLite3 in Python. This helped us store an accurate up to date pricing for food that could be later used for money saved and cheapest option features.
-                                </p>
-                                <br/>
-                                <p>
-                                    For user-friendly access, the front end was hosted on AWS, featuring a JavaScript-based website with Bootstrap integration. This interface enhanced usability and accessibility. Within one week, we successfully delivered a website, contributing to sustainable practices and culinary creativity.
-                                </p>
-                            </>
-                        }
-                        reverse={false}
-                    />
+                    {/* Project 2 */}
+                    <div className="text-left mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
+                        <Panel
+                            imageSrc="/E10A4721.JPG" // Replace with your image path
+                            imageAlt="Left-Over Chef"
+                            heading="2. Leftover Chef | Google Devfest Hackathon Submission"
+                            text={
+                                <>
+                                    <p>
+                                        Secured third place at Google Dev Fest, LeftOver Chef was conceived and developed within a week to address sustainability challenges. Focused on reducing food waste, our solution provided a platform where students could input leftovers, receiving generated recipes to minimise ingredient wastage.
+                                    </p>
+                                    <br/>
+                                    <p>
+                                        We used a RESTful API to fetch recipes, stored data in a JSON file for filtering, and later implemented SQLite3 in Python for managing ingredients and pricing, enabling features like money-saving options.
+                                    </p>
+                                    <br/>
+                                    <p>
+                                        The front end, hosted on AWS, was built with JavaScript and Bootstrap for usability. This project highlights our contribution to sustainability through culinary creativity.
+                                    </p>
+                                </>
+                            }
+                            reverse={false}
+                        />
                     </div>
 
-                    <div className="text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
-                    <Panel
-                        imageSrc="/grad.png" // Replace with your image path
-                        imageAlt="Project Image 2"
-                        heading="3. Grad Gig | Full stack web application"
-                        text={
-                            <>
-                                <p>
-                                    I successfully developed and deployed a full-stack job board application utilising the latest Next.js framework, incorporating server components, and integrating a MongoDB database. This project serves as a comprehensive demonstration of my full-stack development capabilities, from front-end design to back-end implementation and database management. The application includes key features such as user authentication, company creation, job posting with image uploads to S3, and CRUD operations for job listings.
-                                </p>
-                                <br/>
-                                <p>
-                                    For authentication, I integrated WorkOS, enabling seamless and secure user login and management. The project was built with a focus on providing a seamless user experience and leveraging modern web technologies. I covered all essential aspects from the homepage setup to handling job data within the MongoDB database. This project showcases my ability to build robust, scalable web applications, with the entire application deployed on Vercel.
-                                </p>
-                            </>
-                        }
-                        reverse={true}
-                    />
+                    {/* Project 3 */}
+                    <div className="text-left mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
+                        <Panel
+                            imageSrc="/grad.png" // Replace with your image path
+                            imageAlt="Grad Gig"
+                            heading="3. Grad Gig | Full Stack Web Application"
+                            text={
+                                <>
+                                    <p>
+                                        I developed a full-stack job board application using the Next.js framework with server components and a MongoDB database. It includes features like user authentication, job posting with image uploads to S3, and CRUD operations.
+                                    </p>
+                                    <br/>
+                                    <p>
+                                        I integrated WorkOS for authentication and deployed the entire application on Vercel, demonstrating my skills in building scalable web applications.
+                                    </p>
+                                </>
+                            }
+                            reverse={true}
+                        />
                     </div>
-                    <div className="text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
-                    <Panel
-                        imageSrc="/sustain.png" // Replace with your image path
-                        imageAlt="Project Image 3"
-                        heading="4. Sustain-A-Meal | Full stack Group software Development Project"
-                        text={
-                            <>
-                            <p>
-                                I developed and deployed Sustain A Meal as part of a group software development project aimed at combating food waste and promoting sustainability among students. The application leverages AI through OpenAI integration to generate recipes based on available ingredients, serving size, and allergies, helping students minimise food waste. The project included a gamification element where users earned points for reducing waste, fostering competition among students and accommodation teams.
-                            </p>
-                                <br/>
-                                <p>
-                                    Authentication was securely managed with Clerk, and we employed a robust CI/CD pipeline with Docker Compose and NGINX for deployment. Version control was handled using Git, with collaboration facilitated through a Github organisation and automated processes using GitHub Actions. This project showcases my ability to work effectively in a team, utilising modern development practices and tools to deliver a meaningful, sustainable solution
-                                </p>
 
-                            </>
+                    {/* Project 4 */}
+                    <div className="text-left mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
+                        <Panel
+                            imageSrc="/sustain.png" // Replace with your image path
+                            imageAlt="Sustain-A-Meal"
+                            heading="4. Sustain-A-Meal | Full Stack Group Project"
+                            text={
+                                <>
+                                    <p>
+                                        Sustain A Meal is a group project aimed at promoting sustainability among students. It uses AI to generate recipes based on available ingredients and includes a gamification system for reducing food waste.
+                                    </p>
+                                    <br/>
+                                    <p>
+                                        The app includes secure authentication with Clerk, and the deployment process was managed using a CI/CD pipeline with Docker Compose and NGINX. This project showcases my ability to collaborate effectively and implement modern development practices.
+                                    </p>
+                                </>
+                            }
+                            reverse={false}
+                        />
+                    </div>
 
-
-                        }
-                        reverse={false}
-                    />
-                        </div>
-                    <div className="text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
+                    {/* Project 5 */}
+                    <div className="text-left mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
                         <Panel
                             imageSrc="/githublogo.png" // Replace with your image path
-                            imageAlt="Project Image 2"
-                            heading="5. Web-Dev Card Game | Linuz, Apache, PHP, HTML/CSS, Java
-"
+                            imageAlt="Web-Dev Card Game"
+                            heading="5. Web-Dev Card Game | LAMP Stack"
                             text={
                                 <>
                                     <p>
-                                        I developed a web-based card matching game utilizing the LAMP stack (Linux, Apache, MySQL, PHP), hosted on an Apache server on Azure. The game featured a dynamic leaderboard, where user scores were logged and tracked using sessions and cookies, allowing for a personalized and competitive gaming experience. The project involved both front-end and back-end development, requiring a strong understanding of web technologies, session management, and server deployment. This project was part of my web development coursework, showcasing my ability to build and deploy robust server-side applications.                                    </p>
-
+                                        I developed a web-based card matching game using the LAMP stack (Linux, Apache, MySQL, PHP) hosted on an Azure server. The game included a dynamic leaderboard and session-based user tracking for a competitive experience.
+                                    </p>
                                 </>
                             }
                             reverse={true}
                         />
                     </div>
-
                 </div>
             </main>
         </div>
-
-
     );
 }
