@@ -93,7 +93,7 @@ export default function Home() {
                     </div>
 
                     <div className="fade-in text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
-                        <h1 className="fade-in text-2xl mb-3 font-bold text-gray-900 dark:text-gray-100">Welcome to my Portfolio</h1>
+                        <h1 className="fade-in text-2xl sm:text-2xl mb-3 font-bold text-gray-900 dark:text-gray-100">Welcome to my Portfolio</h1>
                         <p className="fade-in mb-3 text-gray-500 dark:text-gray-400">
                             Hello! My name is Morgan James, I am currently a third-year Computer Science student at the University of Exeter, a Russell Group university known for its strong emphasis on research and academic excellence. My passion lies in software development, where I enjoy the challenge of building full-stack applications that solve real-world problems.
                         </p>

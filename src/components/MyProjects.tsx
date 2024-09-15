@@ -12,7 +12,7 @@ export default function MyProjects() {
                     <h1 className="text-4xl font-bold text-center mt-8">My Top 5 Projects</h1>
                     <div className="text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
                         <Panel
-                            imageSrc="/githublogo.png" // Replace with your image path
+                            imageSrc="/mri.png" // Replace with your image path
                             imageAlt="Project Image 2"
                             heading="1. Brain Tumour Detection Using machine learning | Dissertation Piece
 "
@@ -31,7 +31,7 @@ export default function MyProjects() {
                     <div className="text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
 
                     <Panel
-                        imageSrc="/githublogo.png" // Replace with your image path
+                        imageSrc="/E10A4721.JPG" // Replace with your image path
                         imageAlt="Left-Over Chef"
                         heading="2. Leftover Chef | Google devfest hackathon submission"
                         text={
@@ -55,7 +55,7 @@ export default function MyProjects() {
 
                     <div className="text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
                     <Panel
-                        imageSrc="/githublogo.png" // Replace with your image path
+                        imageSrc="/grad.png" // Replace with your image path
                         imageAlt="Project Image 2"
                         heading="3. Grad Gig | Full stack web application"
                         text={
@@ -74,7 +74,7 @@ export default function MyProjects() {
                     </div>
                     <div className="text-left mt-6 p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800">
                     <Panel
-                        imageSrc="/githublogo.png" // Replace with your image path
+                        imageSrc="/sustain.png" // Replace with your image path
                         imageAlt="Project Image 3"
                         heading="4. Sustain-A-Meal | Full stack Group software Development Project"
                         text={
