@@ -112,7 +112,7 @@ function ContactDetails() {
 
 
                         </div>
-                        <div className="flex gap-7 justify-center mt-7">
+                        <div className="flex gap-4 justify-center mt-7 flex-wrap">
                             <a
                                 href="https://github.com/Morgan0404"
                                 target="_blank"
