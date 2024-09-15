@@ -14,9 +14,9 @@ export default function MyProjects() {
                     {/* Project 1 */}
                     <div className="text-left mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
                         <Panel
-                            imageSrc="/mri.png" // Replace with your image path
+                            imageSrc="/detection.png" // Replace with your image path
                             imageAlt="Project Image 2"
-                            heading="1. Brain Tumour Detection Using Machine Learning | Dissertation Piece"
+                            heading="1. Brain Tumour Detection Using ML | Dissertation"
                             text={
                                 <>
                                     <p>
@@ -33,7 +33,7 @@ export default function MyProjects() {
                         <Panel
                             imageSrc="/E10A4721.JPG" // Replace with your image path
                             imageAlt="Left-Over Chef"
-                            heading="2. Leftover Chef | Google Devfest Hackathon Submission"
+                            heading="2. Leftover Chef | Google Devfest Hackathon"
                             text={
                                 <>
                                     <p>
@@ -58,7 +58,7 @@ export default function MyProjects() {
                         <Panel
                             imageSrc="/grad.png" // Replace with your image path
                             imageAlt="Grad Gig"
-                            heading="3. Grad Gig | Full Stack Web Application"
+                            heading="3. Grad Gig | Full Stack Web App"
                             text={
                                 <>
                                     <p>
