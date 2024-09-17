@@ -41,9 +41,9 @@ export default function Home() {
                                 alt="Visit My GitHub"
                                 width="80"
                                 height="7"
-                                className={`h-7 w-20 ${githubLoading ? 'hidden' : ''}`}  // Hide image until loaded
-                                onLoadingComplete={() => setGithubLoading(false)}  // Ensure spinner stops after image load
-                                priority={true}  // Prioritize this image for faster loading
+                                className={`h-7 w-20 ${githubLoading ? 'hidden' : ''}`}
+                                onLoad={() => setGithubLoading(false)}
+                                priority={true}
                             />
                         </a>
 
@@ -85,9 +85,9 @@ export default function Home() {
                                 alt="Visit My LinkedIn"
                                 width="80"
                                 height="5"
-                                className={`h-5 w-15 ${linkedinLoading ? 'hidden' : ''}`}  // Hide image until loaded
-                                onLoadingComplete={() => setLinkedinLoading(false)}  // Ensure spinner stops after image load
-                                priority={true}  // Prioritize this image for faster loading
+                                className={`h-5 w-15 ${linkedinLoading ? 'hidden' : ''}`}
+                                onLoad={() => setLinkedinLoading(false)}
+                                priority={true}
                             />
                         </a>
                     </div>

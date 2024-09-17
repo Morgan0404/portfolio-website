@@ -1,12 +1,20 @@
-// components/Panel.js
+// components/Panel.tsx
 
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
-function Panel({ imageSrc, imageAlt, heading, text, reverse }) {
-    const [imageLoading, setImageLoading] = useState(true);
+interface PanelProps {
+    imageSrc: string;
+    imageAlt: string;
+    heading: string;
+    text: React.ReactNode;
+    reverse: boolean;
+}
+
+function Panel({ imageSrc, imageAlt, heading, text, reverse }: PanelProps) {
+    const [imageLoading, setImageLoading] = useState<boolean>(true);
 
     return (
         <div
@@ -27,9 +35,8 @@ function Panel({ imageSrc, imageAlt, heading, text, reverse }) {
                     alt={imageAlt}
                     width={500}
                     height={300}
-                    className={`rounded-lg ${imageLoading ? 'hidden' : 'block'}`}
+                    onLoad={() => setImageLoading(false)}
                     onLoadingComplete={() => setImageLoading(false)}
-                    priority={true} // Optional: Prioritize image loading
                 />
             </div>
 

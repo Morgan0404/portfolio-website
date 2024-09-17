@@ -1,23 +1,27 @@
-// components/FadeInSection.js
+// components/FadeInSection.tsx
 
 import React, { useRef, useEffect } from 'react';
 
-function FadeInSection(props) {
-    const domRef = useRef();
+interface FadeInSectionProps {
+    children: React.ReactNode;
+    className?: string;
+}
+
+function FadeInSection({ children, className }: FadeInSectionProps) {
+    const domRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             entries => {
                 entries.forEach(entry => {
-                    // When the element is visible, add the 'is-visible' class
                     if (entry.isIntersecting) {
                         entry.target.classList.add('is-visible');
-                        observer.unobserve(entry.target); // Stop observing after it's visible
+                        observer.unobserve(entry.target);
                     }
                 });
             },
             {
-                threshold: 0.1, // Adjust this value as needed
+                threshold: 0.1,
             }
         );
 
@@ -25,7 +29,6 @@ function FadeInSection(props) {
             observer.observe(domRef.current);
         }
 
-        // Cleanup function
         return () => {
             if (domRef.current) {
                 observer.unobserve(domRef.current);
@@ -34,8 +37,8 @@ function FadeInSection(props) {
     }, []);
 
     return (
-        <div className={`fade-in-section ${props.className || ''}`} ref={domRef}>
-            {props.children}
+        <div className={`fade-in-section ${className || ''}`} ref={domRef}>
+            {children}
         </div>
     );
 }
