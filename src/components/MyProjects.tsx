@@ -17,7 +17,7 @@ export default function MyProjects() {
                     <h1 className="text-2xl md:text-4xl font-bold text-center mt-8">My Top 5 Projects</h1>
                     <FadeInSection>
                     {/* Project 1 */}
-                    <div className="text-left text-2xl mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
+                    <div className="text-left text-blue-600 mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
                         <Panel
                             imageSrc="/detection.png" // Replace with your image path
                             imageAlt="Project Image 2"
@@ -36,7 +36,7 @@ export default function MyProjects() {
 
                     {/* Project 2 */}
                     <FadeInSection>
-                    <div className="text-left mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
+                    <div className="text-left text-blue-600 mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
                         <Panel
                             imageSrc="/E10A4721.JPG" // Replace with your image path
                             imageAlt="Left-Over Chef"
@@ -62,7 +62,7 @@ export default function MyProjects() {
                     </FadeInSection>
                     {/* Project 3 */}
                     <FadeInSection>
-                    <div className="text-left mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
+                    <div className="text-left text-blue-600 mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
                         <Panel
                             imageSrc="/grad.png" // Replace with your image path
                             imageAlt="Grad Gig"
@@ -85,7 +85,7 @@ export default function MyProjects() {
 
                     {/* Project 4 */}
                     <FadeInSection>
-                    <div className="text-left mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
+                    <div className="text-left text-blue-600 mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
                         <Panel
                             imageSrc="/sustain.png" // Replace with your image path
                             imageAlt="Sustain-A-Meal"
@@ -109,7 +109,7 @@ export default function MyProjects() {
 
                     {/* Project 5 */}
                     <FadeInSection>
-                    <div className="text-left mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
+                    <div className="text-left text-blue-600 mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
                         <Panel
                             imageSrc="/githublogo.png" // Replace with your image path
                             imageAlt="Web-Dev Card Game"
