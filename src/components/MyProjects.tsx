@@ -1,6 +1,11 @@
+'use client';
+
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Panel from "@/components/Panel"; // Adjust the path as needed
+import FadeInSection from '@/components/FadeInSection';
+import {Fade} from "react-bootstrap"; // Import the component
+
 
 export default function MyProjects() {
     return (
@@ -10,9 +15,9 @@ export default function MyProjects() {
             <main className="fade-in flex min-h-screen flex-col items-center justify-between px-4 md:px-24 pt-10 md:pt-20">
                 <div className="flex flex-col items-center gap-4">
                     <h1 className="text-2xl md:text-4xl font-bold text-center mt-8">My Top 5 Projects</h1>
-
+                    <FadeInSection>
                     {/* Project 1 */}
-                    <div className="text-left mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
+                    <div className="text-left text-2xl mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
                         <Panel
                             imageSrc="/detection.png" // Replace with your image path
                             imageAlt="Project Image 2"
@@ -27,8 +32,10 @@ export default function MyProjects() {
                             reverse={true}
                         />
                     </div>
+                    </FadeInSection>
 
                     {/* Project 2 */}
+                    <FadeInSection>
                     <div className="text-left mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
                         <Panel
                             imageSrc="/E10A4721.JPG" // Replace with your image path
@@ -52,8 +59,9 @@ export default function MyProjects() {
                             reverse={false}
                         />
                     </div>
-
+                    </FadeInSection>
                     {/* Project 3 */}
+                    <FadeInSection>
                     <div className="text-left mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
                         <Panel
                             imageSrc="/grad.png" // Replace with your image path
@@ -73,8 +81,10 @@ export default function MyProjects() {
                             reverse={true}
                         />
                     </div>
+                    </FadeInSection>
 
                     {/* Project 4 */}
+                    <FadeInSection>
                     <div className="text-left mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
                         <Panel
                             imageSrc="/sustain.png" // Replace with your image path
@@ -94,8 +104,11 @@ export default function MyProjects() {
                             reverse={false}
                         />
                     </div>
+                    </FadeInSection>
+
 
                     {/* Project 5 */}
+                    <FadeInSection>
                     <div className="text-left mt-6 p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 w-full max-w-4xl">
                         <Panel
                             imageSrc="/githublogo.png" // Replace with your image path
@@ -111,6 +124,7 @@ export default function MyProjects() {
                             reverse={true}
                         />
                     </div>
+                    </FadeInSection>
                 </div>
             </main>
         </div>
